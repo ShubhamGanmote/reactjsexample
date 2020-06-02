@@ -1,0 +1,120 @@
+.list-view-container {
+	.list-view-header-bar-container {
+		background-color: white;
+		border-bottom: 2px solid rgba(218, 220, 234, 0.3);
+		padding: 10px 20px;
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			// justify-content: space-evenly;
+			align-items: center;
+
+			li {
+				margin-right: 2rem;
+				cursor: pointer;
+
+				.list-view-header-sorting-items {
+					font-size: 12px;
+					// font-family: 'Whitney';
+					color: rgb(123, 130, 134);
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+
+				.active {
+					border-radius: 3px;
+					color: white;
+					padding: 4px;
+					background-color: rgb(93, 147, 162);
+				}
+			}
+
+			li:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.lists {
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+			.list-item-contents {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 20px;
+				height: 100px;
+				max-height: 100px;
+				border-bottom: 2px solid rgba(218, 220, 234, 0.3);
+
+				.list-item-name {
+					font-size: 32px;
+					// font-family: 'Whitney';
+					color: rgb(0, 0, 0);
+					line-height: 1;
+				}
+				.list-item-serial-no {
+					font-size: 16px;
+					// font-family: 'Whitney';
+					color: rgb(131, 134, 144);
+				}
+
+				.list-date-time-container {
+					flex-basis: 54%;
+					.list-item-calendar-container {
+						display: flex;
+
+						.list-item-calendar-image {
+							margin-right: 0.5rem;
+						}
+
+						.list-item-calendar {
+							font-size: 14px;
+							// font-family: 'Whitney';
+							color: rgb(162, 166, 178);
+						}
+					}
+				}
+
+				.list-item-price {
+					font-size: 36px;
+					// font-family: 'Whitney';
+					color: rgb(0, 0, 0);
+				}
+
+				.dot {
+					height: 12px;
+					width: 12px;
+					.android {
+						width: 12px;
+						height: 12px;
+						border-radius: 50%;
+						background-color: rgb(42, 187, 156);
+					}
+					.ipad {
+						width: 12px;
+						height: 12px;
+						border-radius: 50%;
+						background-color: rgb(155, 92, 181);
+					}
+					.windows {
+						width: 12px;
+						height: 12px;
+						border-radius: 50%;
+						background-color: rgb(58, 153, 217);
+					}
+				}
+			}
+
+			.alternate {
+				background-color: rgb(251, 252, 254);
+			}
+		}
+	}
+}
