@@ -1,0 +1,68 @@
+.graph-container {
+	background-image: linear-gradient(180deg, rgb(34, 50, 64), rgb(25, 32, 38));
+	height: 200px;
+	max-height: 200px;
+	padding: 1rem 2rem;
+
+	.graph-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.graph-header-left {
+			display: flex;
+			align-items: center;
+
+			.metric {
+				font-size: 12px;
+				// font-family: 'Whitney';
+				color: rgb(135, 153, 165);
+				text-transform: uppercase;
+			}
+
+			.selector {
+				margin-left: 1.2rem;
+				position: relative;
+				.custom-selection {
+					font-size: 13px;
+					// font-family: 'Whitney';
+					color: rgb(255, 255, 255);
+					background-color: transparent;
+					border: 1px solid rgb(131, 146, 157);
+					padding: 5px 10px;
+					border-radius: 20px;
+					width: 135px;
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					text-indent: 1px;
+					text-overflow: '';
+				}
+				.custom-selection::-ms-expand {
+					display: none;
+				}
+				.down-arrow {
+					position: absolute;
+					right: 20px;
+					top: 4px;
+				}
+			}
+		}
+
+		.graph-header-right {
+			display: flex;
+			align-items: center;
+			padding-top: 5px;
+
+			div:last-child {
+				margin-left: 1rem;
+			}
+		}
+	}
+
+	.graph-main-container {
+		height: calc(100% - 50px);
+		width: 100%;
+		margin-top: 1rem;
+
+	}
+}
